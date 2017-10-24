@@ -1,0 +1,104 @@
+.content
+  height: 150vh
+  background: #3c3c3c
+
+.logo
+  cursor: pointer
+.content__intro
+  background-color: #222222
+  background-image: url(../images/intro.jpg)
+  background-position: top
+  background-repeat: no-repeat
+  background-size: cover
+  position: fixed
+  z-index: 110
+  top: 0
+  width: 100vw
+  color: $white
+
+  .banner-titel
+    position: relative
+    top: 35vh
+    left: 5em
+    h4
+      margin: 0
+      margin-bottom: -15px
+      margin-left: 20px
+      animation-delay: 2s
+      animation-duration: 2s
+    h1
+      margin: 0px
+      font-weight: 700
+      letter-spacing: 10px
+      animation-duration: 3s
+    h2
+      font-weight: 100
+      margin-top: -15px
+      margin-left: 20px
+      animation-duration: 2s
+      animation-delay: 3s
+
+  .enter-btn
+    position: relative
+    top: 50vh
+    left: 5em
+    animation-duration: 2s
+    animation-delay: 3s
+    a.scroll-down
+      color: $white
+      letter-spacing: 3px
+      font-weight: 100
+      position: absolute
+      left: 25px
+      top: 10px
+
+#intro
+  transition: transform 4s cubic-bezier(.6,.18,.08,.94)
+
+.enter
+  transform: translateY(-240vh) scaleY(2)
+
+
+@include for-tablet-portrait-up
+  .banner-titel
+    left: 5.5em !important
+    h4, h2
+      margin-left: 35px !important
+  .enter-btn
+    left: 5.5em !important
+    a.scroll-down
+      left: 25px !important
+
+@include for-tablet-landscape-up
+  .banner-titel
+    left: 6em !important
+    h4, h2
+      margin-left: 45px !important
+  .enter-btn
+    left: 6em !important
+    a.scroll-down
+      left: 35px !important
+
+@include for-desktop-up
+  .banner-titel
+    left: 7em !important
+    h4, h2
+      margin-left: 60px !important
+  .enter-btn
+    left: 7em !important
+    a.scroll-down
+      left: 35px !important
+      &:hover
+        color: $orange !important
+
+
+
+@include for-big-desktop-up
+  .banner-titel
+    left: 10em !important
+    h4, h2
+      margin-left: 70px !important
+  .enter-btn
+    left: 10em !important
+    a.scroll-down
+      left: 35px !important

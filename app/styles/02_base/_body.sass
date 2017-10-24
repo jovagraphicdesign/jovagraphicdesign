@@ -1,0 +1,111 @@
+body
+  background-color: $white
+  font-family: 'Roboto', sans-serif
+  font-size: 14px
+  line-height: 1.6
+  box-sizing: border-box
+
+h1
+  font-family: 'Raleway', sans-serif
+  font-size: 48px
+  line-height: 1.05
+  letter-spacing: -1px
+
+h2
+  font-family: 'Roboto', sans-serif
+  font-size: 24px
+  line-height: 1.14
+
+h3
+  font-family: 'Roboto', sans-serif
+  font-size: 20px
+  line-height: 1.38
+h4
+  font-family: 'Raleway', sans-serif
+  font-weight: 200
+  font-weight: 100
+  font-size: 16px
+  line-height: 1.6
+  letter-spacing: 3px
+
+.gigantic
+  font-family: 'Raleway', sans-serif
+  font-size: 80px
+  line-height: 1.09
+  letter-spacing: -2px
+
+.rotate
+  display: inline-block
+  transform: rotateZ(180deg)
+
+a
+  font-family: 'Raleway', sans-serif
+  color: $black
+  text-decoration: none
+
+.verberg
+  display: none
+
+.sect-title
+  color: $orange
+  font-size: 1.4rem !important
+  font-weight: 200
+  margin-left: 1rem
+
+.caption-title
+  color: $black
+  font-size: 1.5rem !important
+  letter-spacing: .2rem
+  font-weight: 300
+.contact-title
+  color: $white
+p
+  max-width: 80%
+  font-weight: 200
+  font-size: 1rem
+  hyphens: auto
+  word-wrap: break-word
+
+small
+  position: relative
+  top: -2rem
+  left: 2rem
+
+.wrapper
+  max-width: 960px
+  margin: auto
+
+@include for-tablet-portrait-up
+  h1
+    font-size: 68px
+  .gigantic
+    font-size: 100px
+
+  p
+    font-size: 1.2rem
+
+@include for-tablet-landscape-up
+  h1
+    font-size: 72px !important
+  h2
+    font-size: 36px !important
+  h3
+    font-size: 28px !important
+  h4
+    font-size: 22px !important
+  .gigantic
+    font-size: 120px !important
+  p
+    font-size: 1.5rem
+
+@include for-desktop-up
+  h1
+    font-size: 80px !important
+  h2
+    font-size: 42px !important
+  h3
+    font-size: 32px !important
+  h4
+    font-size: 26px !important
+  .gigantic
+    font-size: 150px !important

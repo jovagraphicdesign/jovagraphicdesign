@@ -1,0 +1,40 @@
+.title-skills
+  margin-top: 100px
+  margin-bottom: 50px
+
+.progress-bar-container
+  height: auto
+  max-width: 100%
+  width: 70%
+  margin: 10% auto
+
+.bar-title
+  font-size: 1rem!important
+  font-weight: bold
+  margin-bottom: 0px
+  color: $black
+  text-transform: uppercase
+
+
+.skills-bar
+  background-color: $black
+  width: 100%
+  height: 15px
+  margin-bottom: 20px
+  border-radius: 5px
+
+
+.skills-bar-inner
+  background-color: $orange
+  width: 0%
+  height: 100%
+  position: relative
+  border-top-left-radius: 5px
+  border-bottom-left-radius: 5px
+  &::after
+    position: absolute
+    right: 2.5%
+    content: attr(data-precent)
+    line-height: 15px
+    color: $white
+    font-weight: 400

@@ -1,0 +1,46 @@
+.about
+  margin-top: 100px
+  padding: 2rem
+  padding-bottom: 4rem
+  a
+    padding-right: 20px
+    margin-top: 20px
+    span
+      padding: 20px
+
+    .more
+      background: $black
+      position: relative
+      display: inline-block
+      width: 5%
+      height: 1px
+      transition: 300ms ease-out
+      top: -3px
+      z-index: 20
+
+    .black-button-arrow
+      fill: $black
+      position: relative
+      left: -55px
+      margin-left: 0
+      transition: .2s linear
+      cursor: pointer
+    &:hover
+      color: $orange
+
+      .more
+        background: $orange
+        width: 7%
+        margin-left: -2%
+
+      .black-button-arrow
+        fill: $orange
+
+@include for-phone-only // FIXME: for phone en tablet
+  .about
+    a
+      display: block
+    &:hover
+      .more
+        width: 20%
+        margin-left: -1px

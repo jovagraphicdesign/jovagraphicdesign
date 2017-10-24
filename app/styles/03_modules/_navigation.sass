@@ -1,0 +1,72 @@
+nav .brand-bar
+  background: $white
+  opacity: .95
+  height: 75px
+  width: 100vw
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 100
+nav .brand-bar-open
+  opacity: 0
+  height: 0
+
+nav .menu
+  background-color: $black
+  opacity: 0.9
+  overflow: hidden
+  height: 0px
+  width: 100vw
+  top: 0
+  position: fixed
+  z-index: 102
+
+nav .menu ul
+  list-style: none
+  margin: 0
+  padding: 0
+  position: relative
+  left: 10rem
+
+nav .open
+  height: auto
+
+nav .menu ul li
+  float: left
+
+nav .menu ul li a
+  color: $white
+  display: inline-block
+  padding: 1.7em 2em
+  font-size: 1rem
+  &:hover,
+  &:focus
+    color: $orange
+
+nav .logo
+  position: fixed
+  height: 60px
+  width: 60px
+  top: 5px
+  left: 20px
+  transition: opacity 300ms
+  z-index: 101
+nav .logo-open
+  opacity: 0
+
+
+@include for-phone-only // FIXME: for-phone-tablet-up
+
+  nav .menu ul
+    left: 0
+
+  nav .menu ul li
+    float: none
+    border-bottom: 1px solid $bordergray
+    text-align: center
+    &:last-child
+      border-bottom: none
+
+  nav .menu ul li a
+    display: block
+    padding: 2rem 0

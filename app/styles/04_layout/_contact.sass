@@ -1,0 +1,81 @@
+.contact
+  background-color: $black
+  padding: 50px
+  .wrapper
+    ul
+      list-style: none
+      li
+
+        float: left
+        margin-right: 2rem
+
+        a
+          background-color: $white
+          display: inline-block
+          width: 50px
+          height: 50px
+          text-align: center
+          line-height: 50px
+          margin-bottom: 2rem
+          transition: background-color ease 0.8s
+          transition: color ease 1s
+          &:hover
+            background-color: $orange
+            color: $white
+        .btn-hallo
+          width: calc(150px + 4rem)
+          transition: all ease 0.8s
+          &:hover
+            background-color: $orange
+            color: $white
+            font-size: 1.1rem
+
+
+        .fa
+          font-size: 2rem
+          text-align: center
+          line-height: 50px
+    .contact-info
+      clear: both
+      padding: 20px 50px 20px 50px
+      a
+        color: $white
+        display: block
+        padding-bottom: 2rem
+        &:last-child
+          padding-bottom: 1rem
+    small
+      padding-left: 50px
+      color: $gray
+
+// styles contact pagina
+.contact-header
+  margin-top: 100px
+
+.contact_formulier
+  margin-bottom: 50px
+  padding: 5rem
+  .form-horizontal
+    .form-group
+      padding: .5rem
+      label
+        text-transform: uppercase
+        color: $orange
+      input,textarea
+        width: 80%
+        padding: .3rem
+        &:focus
+          outline-color: $orange
+          outline-width: medium
+      button
+        border: none
+        background-color: $black
+        color: $white
+        width: calc(150px + 4rem)
+        height: 50px
+        text-transform: uppercase
+        font-size: 1.3rem
+        &:hover
+          border: 1px solid $black
+          background-color: $white
+          color: $black
