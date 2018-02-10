@@ -19,10 +19,12 @@
     background-color: $black
     opacity: .3
 
-  .image-container
-    img   
-      width: 100%
-      
+.image-container
+      img 
+        object-fit: cover
+        width: 180%
+        
+  
 
 
 .caption
@@ -36,9 +38,15 @@
 
 .project-item:nth-child(1)
   background-color: pink
+  color: $white
+  h1 
+    color: $white 
 
 .project-item:nth-child(2)
   background-color: cyan
+  color: $orange
+  h1 
+    color: $orange
 
 .project-item:nth-child(3)
   background-color: tomato
@@ -89,15 +97,23 @@
   .project-item:nth-child(5n+2)
     grid-column: span 2
     grid-row: span 1
+    .image-container
+      img 
+        object-fit: cover
+        width: 110%
     .caption
       background-color: transparent
   .project-item:nth-child(1),
   .project-item:nth-child(3n+4)
     grid-column: span 3
+    .image-container
+      img 
+        object-fit: cover
+        width: 100%
   .project-item:nth-child(5n+5)
     grid-row: span 1
     .caption
-      background-color: $white
+      background-color: $white 
   .project-item:last-child
     grid-row: span 1
     grid-column: span 1
